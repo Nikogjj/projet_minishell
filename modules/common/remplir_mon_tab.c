@@ -6,7 +6,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-void remplir_mon_tab(char * commande,char* mon_argv[255],int nombre_de_mot)
+void remplir_mon_tab(char * commande,char** mon_argv,int nombre_de_mot)
 {
     mon_argv[0]=strtok(commande," ");
     int i=1;

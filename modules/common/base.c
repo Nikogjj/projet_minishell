@@ -28,7 +28,5 @@ void start_minishell(){
             remplir_mon_tab(commande,mon_argv,nombre_de_mot);
             check_commande(mon_argv,nombre_de_mot);
         }
-        
-
     }
 }

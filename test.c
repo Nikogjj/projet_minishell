@@ -6,7 +6,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#include "my_strtok.c"
 
 int main(){
 

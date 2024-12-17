@@ -32,12 +32,14 @@ void check_commande(char **mon_argv,int nombre_de_mot){
     }
     if (strcmp(mon_argv[0],"cd")==0)
     {
+        // mon_argv[0]="/bin/chdir";
+        // create_fork(mon_argv);
         cd(mon_argv,nombre_de_mot,1);
     }
     
     for (int i = 0; i <= nombre_de_mot; i++)
     {
-        printf("mon_argv[%d] = %s\n",i,mon_argv[i]);
+        // printf("mon_argv[%d] = %s\n",i,mon_argv[i]);
     }
     
 }
