@@ -6,7 +6,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-void  get_commande(char * commande){
-    fgets(commande,255,stdin);
-    return ;
+void ls(char** mon_argv){
+    mon_argv[0]="/bin/ls";
 }

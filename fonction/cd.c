@@ -6,8 +6,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#include "modules/common/base.c"
+void cd(char** mon_argv,int nombre_de_mot,int i){
+    chdir(mon_argv[i]);
 
-int main(){
-    start_minishell();
 }

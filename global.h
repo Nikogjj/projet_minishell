@@ -1,5 +1,0 @@
-#include "get_nombre_de_mot.c"
-#include "get_commande.c"
-#include "remplir_mon_tab.c"
-#include "affichage_tab.c"
-#include "create_fork.c"

@@ -2,6 +2,10 @@
     "files.associations": {
         "wait.h": "c",
         "string.h": "c",
-        "errno.h": "c"
+        "errno.h": "c",
+        "check_commande.c": "cpp",
+        "types.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c"
     }
 }
