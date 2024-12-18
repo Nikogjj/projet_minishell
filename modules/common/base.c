@@ -32,6 +32,7 @@ void start_minishell(){
         {
             int nombre_de_mot = get_nombre_de_mot(commande,strlen(commande));
             char* mon_argv[nombre_de_mot+1];
+            printf("nombre de mot = %d\n",nombre_de_mot);
             remplir_mon_tab(commande,mon_argv,nombre_de_mot);
             check_commande(mon_argv,nombre_de_mot);
         }

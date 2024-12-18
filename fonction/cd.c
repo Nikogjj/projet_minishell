@@ -7,11 +7,11 @@
 #include <sys/wait.h>
 
 int cd(char** mon_argv,int nombre_de_mot){
-    if (nombre_de_mot>2)
-    {
-        printf("Erreur cd: trop d'arguments\n");
-        return -1;
-    }
+    // if (nombre_de_mot>2)
+    // {
+    //     printf("Erreur cd: trop d'arguments\n");
+    //     return -1;
+    // }
     
     if (chdir(mon_argv[1])==-1)
     {

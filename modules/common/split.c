@@ -20,9 +20,6 @@ int split(char* commande,char* delimiteur){
 
     for (int i = 0; i < strlen(copy_commande); i++)
     {
-        // printf("debut\n");
-        // printf("delimiteur[0] %c\n",delimiteur[0]);
-        // printf("fin\n");
         if (copy_commande[i]==delimiteur[0])
         {
             int compteur;
@@ -43,6 +40,7 @@ int split(char* commande,char* delimiteur){
                 }
                 new_commande=&commande[index];
                 int nombre_de_mot = get_nombre_de_mot(new_commande,strlen(new_commande));
+                printf("nombre de mot = %d\n",nombre_de_mot);
                 char* mon_argv[nombre_de_mot+1];
                 remplir_mon_tab(new_commande,mon_argv,nombre_de_mot);
                 check_commande(mon_argv,nombre_de_mot);
