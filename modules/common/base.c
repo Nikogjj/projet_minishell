@@ -8,6 +8,7 @@
 
 #include "get_commande.c"
 #include "split.c"
+#include "check_space.c"
 
 
 void start_minishell(){
@@ -15,8 +16,14 @@ void start_minishell(){
     {
         char commande[255];memset(commande,0,255);
         get_commande(commande);
-
-        if (strstr(commande,"&&")!=NULL)
+        if (strcmp(commande,"\n")==0)
+        {
+            
+        }
+        
+        // check_space(commande);
+        // return ;
+        else if (strstr(commande,"&&")!=NULL)
         {
             split(commande,"&&");
         }

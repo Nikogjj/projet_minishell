@@ -8,14 +8,22 @@
 
 void remplir_mon_tab(char * commande,char** mon_argv,int nombre_de_mot)
 {
-    mon_argv[0]=strtok(commande," ");
-    int i=1;
-    do
+    if (nombre_de_mot==1)
     {
-        mon_argv[i]=strtok(NULL," ");
-        i++;
-    } while (i<=nombre_de_mot);
+        mon_argv[0]=strtok(commande," ");
+        mon_argv[1]=0;
+    }
+    else{
+        mon_argv[0]=strtok(commande," ");
+        int i=1;
+        do
+        {
+            mon_argv[i]=strtok(NULL," ");
+            i++;
+        } while (i<=nombre_de_mot);
+        
+        mon_argv[nombre_de_mot+1]=0;
+    }
     
-    mon_argv[nombre_de_mot+1]=0;
     return ;
 }

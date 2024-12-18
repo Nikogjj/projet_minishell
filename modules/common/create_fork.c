@@ -14,11 +14,9 @@ void create_fork(char** mon_argv){
                 printf("error\n");
                 break;
             case 0:
-                extern char **environ;
-
+                // extern char **environ;
                 int check_error = execvp(mon_argv[0],mon_argv);perror("execve() de l'enfant");
                 if (check_error==-1){
-                    printf("error du execvp\n");
                     exit(EXIT_FAILURE);
                     break;
                 }

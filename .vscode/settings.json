@@ -6,6 +6,7 @@
         "check_commande.c": "cpp",
         "types.h": "c",
         "stdlib.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "create_fork.c": "cpp"
     }
 }
