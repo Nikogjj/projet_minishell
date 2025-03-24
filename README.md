@@ -1,1 +1,1 @@
-Je refais actuellement toute la présentation de mes projets le READ_ME et d'autres améliorations arriveront bientôt
+Je refais actuellement toute la présentation de mes projets le README et d'autres améliorations arriveront bientôt
